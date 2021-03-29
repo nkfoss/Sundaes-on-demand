@@ -2,6 +2,7 @@ import { render, screen, waitForElementToBeRemoved } from '@testing-library/reac
 import userEvent from "@testing-library/user-event";
 import SummaryForm from '../SummaryForm';
 
+
 test("Checkbox is unchecked by default", () => {
 	render( <SummaryForm /> )
 
