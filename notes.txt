@@ -7,16 +7,16 @@ to happen in our tests. We WILL be testing the app's response to our coded mock-
 There are two main parts: handlers and servers.
 
 ## Creating Handlers ##
-
 See the handler.js file... it's essentially just an array of routes and instructions on how to handle them. This is imported and used by the mock server.
 
 ## Creating mock server ##
-
 See the ./mocks/server.js file... it's just an exported function that uses the handlers we previously defined.
 ** NOTE: You also need to make some changes to the setupTests file. Please check it out.
 
 
 !!! IMPORTANT !!!
-
 Anytime you are doing soemthing asynchronous on the page, you MUST use `await` and `findBy()`.
+
+## Testing for errors ##
+In order to test for errors, we need to reset the handlers in the error-tests. The OrderEntry test shows this happening at the top.
 
