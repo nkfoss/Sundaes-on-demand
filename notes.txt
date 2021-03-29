@@ -1,0 +1,16 @@
+Mock Service Worker
+
+> npm install msw
+
+The MSW's purpose is to intercept network calls and return specified responses. We don't want any network calls
+to happen in our tests. We WILL be testing the app's response to our coded mock-response.
+There are two main parts: handlers and servers.
+
+## Creating Handlers ##
+
+See the handler.js file... it's essentially just an array of routes and instructions on how to handle them. This is imported and used by the mock server.
+
+## Creating mock server ##
+
+See the ./mocks/server.js file... it's just an exported function that uses the handlers we previously defined.
+** NOTE: You also need to make some changes to the setupTests file. Please check it out.
