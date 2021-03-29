@@ -14,3 +14,9 @@ See the handler.js file... it's essentially just an array of routes and instruct
 
 See the ./mocks/server.js file... it's just an exported function that uses the handlers we previously defined.
 ** NOTE: You also need to make some changes to the setupTests file. Please check it out.
+
+
+!!! IMPORTANT !!!
+
+Anytime you are doing soemthing asynchronous on the page, you MUST use `await` and `findBy()`.
+
